@@ -16,9 +16,13 @@
 
 ### Projects
 
-| Project | Description | Docs |
-|---|---|---|
-| [**carve**](https://github.com/markup-carve/carve) | A post-Djot lightweight markup language with visual mnemonics and human-centered design. | [markup-carve.github.io/carve](https://markup-carve.github.io/carve/) |
+| Project | Description |
+|---|---|
+| [**carve**](https://github.com/markup-carve/carve) | Language definition, design rationale, and quick reference. [Docs →](https://markup-carve.github.io/carve/) |
+| [**carve-js**](https://github.com/markup-carve/carve-js) | Reference TypeScript implementation. |
+| [**carve-rs**](https://github.com/markup-carve/carve-rs) | Rust parser and HTML renderer with a `carve` CLI; passes the spec corpus. |
+| [**carve-php**](https://github.com/markup-carve/carve-php) | PHP parser, forked from djot-php — syntax migration in progress. *Alpha.* |
+| [**awesome-carve**](https://github.com/markup-carve/awesome-carve) | Curated list of Carve tools, libraries, and resources. |
 
 ### A taste
 
@@ -39,3 +43,4 @@
 ### Get involved
 
 Issues, ideas, and PRs welcome on any project repo.
+Browse [awesome-carve](https://github.com/markup-carve/awesome-carve) for tools and integrations.
