@@ -28,7 +28,7 @@
 |---|---|
 | [**carve-js**](https://github.com/markup-carve/carve-js) | Reference TypeScript implementation. |
 | [**carve-rs**](https://github.com/markup-carve/carve-rs) | Rust parser and HTML renderer with a `carve` CLI; passes the spec corpus. |
-| [**carve-php**](https://github.com/markup-carve/carve-php) | PHP parser, forked from djot-php — syntax migration in progress. *Alpha.* |
+| [**carve-php**](https://github.com/markup-carve/carve-php) | PHP parser and HTML renderer, with converters from Markdown, HTML, BBCode, and Djot. |
 | [**carve-wasm**](https://github.com/markup-carve/carve-wasm) | WASM bindings for carve-rs. *Early.* |
 
 **Editor support**
@@ -39,7 +39,7 @@
 | [**vscode-carve**](https://github.com/markup-carve/vscode-carve) | VS Code extension — syntax highlighting, snippets, live preview. |
 | [**zed-carve**](https://github.com/markup-carve/zed-carve) | Zed editor support. |
 | [**tree-sitter-carve**](https://github.com/markup-carve/tree-sitter-carve) | Tree-sitter grammar (highlighting, structural editing). |
-| [**carve-lsp**](https://github.com/markup-carve/carve-lsp) | Language server — syntax diagnostics. *Early.* |
+| [**carve-lsp**](https://github.com/markup-carve/carve-lsp) | Language server: diagnostics, completion, hover, rename, folding, formatting, and semantic tokens. |
 
 These provide **source-mode** editing: you write Carve markup and get highlighting,
 snippets, and a rendered preview side by side.
