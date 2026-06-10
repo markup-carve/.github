@@ -35,18 +35,29 @@
 
 | Project | Description |
 |---|---|
+| [**intellij-carve**](https://github.com/markup-carve/intellij-carve) | JetBrains IDEs (IntelliJ, PhpStorm, WebStorm, ...): highlighting, live preview, HTML export. |
 | [**vscode-carve**](https://github.com/markup-carve/vscode-carve) | VS Code extension — syntax highlighting, snippets, live preview. |
 | [**zed-carve**](https://github.com/markup-carve/zed-carve) | Zed editor support. |
 | [**tree-sitter-carve**](https://github.com/markup-carve/tree-sitter-carve) | Tree-sitter grammar (highlighting, structural editing). |
 | [**carve-lsp**](https://github.com/markup-carve/carve-lsp) | Language server — syntax diagnostics. *Early.* |
 
+These provide **source-mode** editing: you write Carve markup and get highlighting,
+snippets, and a rendered preview side by side.
+
 **Integrations**
 
 | Project | Description |
 |---|---|
+| [**carve-grammars**](https://github.com/markup-carve/carve-grammars) | **WYSIWYG** rich-text editing via Tiptap / ProseMirror, with a Carve serializer for **roundtripping** (Carve &harr; rich text &harr; Carve). |
 | [**wp-carve**](https://github.com/markup-carve/wp-carve) | WordPress plugin (carve-php engine) — live preview, paste, REST API. |
-| [**carve-grammars**](https://github.com/markup-carve/carve-grammars) | Tiptap editor kit and Carve serializer. |
 | [**vite-plugin-carve**](https://github.com/markup-carve/vite-plugin-carve) | Vite plugin — import `.carve` documents as rendered HTML. *Early.* |
+
+**WYSIWYG vs source editing:** the editor plugins above edit Carve *source* with a
+read-only preview. For *WYSIWYG* (edit the rendered document directly), use
+[**carve-grammars**](https://github.com/markup-carve/carve-grammars) — its Tiptap
+kit edits rich text and its serializer **roundtrips** that content back to Carve
+source. (carve-js also ships Markdown/Djot → Carve migration helpers for one-way
+conversion.)
 
 **Resources**
 
