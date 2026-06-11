@@ -70,7 +70,7 @@ conversion.)
 ```
 # Heading
 
-/italic/  *bold*  _underline_  ~strike~  ==highlight==
+/italic/  *bold*  _underline_  ~strike~  =highlight=
 
 ![Photo](img.jpg)
 ^ Figure 1: caption attaches to the image above
