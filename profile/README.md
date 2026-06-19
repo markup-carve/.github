@@ -49,6 +49,7 @@ snippets, and a rendered preview side by side.
 | Project | Description |
 |---|---|
 | [**carve-grammars**](https://github.com/markup-carve/carve-grammars) | **WYSIWYG** rich-text editing via Tiptap / ProseMirror, with a Carve serializer for **roundtripping** (Carve &harr; rich text &harr; Carve). Also ships **Prism** and **highlight.js** grammars for web syntax highlighting. |
+| [**symfony-carve**](https://github.com/markup-carve/symfony-carve) | Symfony bundle (carve-php engine) — a `{{ value\|carve }}` Twig filter and `carve()` function, a `CarveRenderer` service, and configurable safe-mode sanitization. ([demo app](https://github.com/markup-carve/symfony-carve-demo)) |
 | [**wp-carve**](https://github.com/markup-carve/wp-carve) | WordPress plugin (carve-php engine) — live preview, paste, REST API. |
 | [**vite-plugin-carve**](https://github.com/markup-carve/vite-plugin-carve) | Vite plugin — import `.carve` documents as rendered HTML. *Early.* |
 
