@@ -10,7 +10,7 @@
 
 - **Visual mnemonics** — syntax resembles its output (`/italic/`, `*bold*`, `_underline_`, `~strike~`)
 - **One way to do things** — no ambiguity, no redundant syntax
-- **Learnable in 5 seconds, memorable after 5 days** — designed around how non-technical users actually mark up text
+- **Learnable in 10 seconds, memorable after 10 days** — designed around how non-technical users actually mark up text
 - **No expressive blind spots** — every output is achievable without workarounds
 - **Linear parsing** — no backtracking, no forward references
 
