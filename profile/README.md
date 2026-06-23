@@ -64,6 +64,8 @@ snippets, and a rendered preview side by side.
 | [**mkdocs-carve**](https://github.com/markup-carve/mkdocs-carve) | MkDocs plugin — render `.crv`/`.carve` documentation pages via carve-py. |
 | [**astro-carve**](https://github.com/markup-carve/astro-carve) | Astro integration — import `.crv`/`.carve` into Astro pages/components as rendered HTML. |
 | [**eleventy-carve**](https://github.com/markup-carve/eleventy-carve) | Eleventy (11ty) plugin — `.crv`/`.carve` as a template format with frontmatter. |
+| [**hugo-carve**](https://github.com/markup-carve/hugo-carve) | Hugo preprocessor (via carve-go) — convert `.crv`/`.carve` content to HTML pages. |
+| [**jekyll-carve**](https://github.com/markup-carve/jekyll-carve) | Jekyll converter plugin — render `.crv`/`.carve` via the carve Ruby gem. |
 
 **WYSIWYG vs source editing:** the editor plugins above edit Carve *source* with a
 read-only preview. For *WYSIWYG* (edit the rendered document directly), use
