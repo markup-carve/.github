@@ -30,6 +30,7 @@
 | [**carve-rs**](https://github.com/markup-carve/carve-rs) | Rust parser and HTML renderer with a `carve` CLI; passes the spec corpus. |
 | [**carve-php**](https://github.com/markup-carve/carve-php) | PHP parser and HTML renderer, with converters from Markdown, HTML, BBCode, and Djot. |
 | [**carve-wasm**](https://github.com/markup-carve/carve-wasm) | WASM bindings for carve-rs. *Early.* |
+| [**python-carve**](https://github.com/markup-carve/python-carve) | Python bindings (PyO3) over carve-rs; native wheels via maturin, output identical to the carve-rs CLI. |
 
 **Editor support**
 
@@ -38,6 +39,9 @@
 | [**intellij-carve**](https://github.com/markup-carve/intellij-carve) | JetBrains IDEs (IntelliJ, PhpStorm, WebStorm, ...): highlighting, live preview, HTML export. |
 | [**vscode-carve**](https://github.com/markup-carve/vscode-carve) | VS Code extension — syntax highlighting, snippets, live preview. |
 | [**zed-carve**](https://github.com/markup-carve/zed-carve) | Zed editor support. |
+| [**carve-emacs**](https://github.com/markup-carve/carve-emacs) | Emacs major mode (`carve-mode`): font-lock highlighting, imenu, outline. |
+| [**carve-vim**](https://github.com/markup-carve/carve-vim) | Vim and Neovim support: regex syntax plus Neovim Tree-sitter integration. |
+| [**carve-sublime**](https://github.com/markup-carve/carve-sublime) | Sublime Text package (syntax highlighting). |
 | [**tree-sitter-carve**](https://github.com/markup-carve/tree-sitter-carve) | Tree-sitter grammar (highlighting, structural editing). |
 | [**carve-lsp**](https://github.com/markup-carve/carve-lsp) | Language server: diagnostics, completion, hover, rename, folding, formatting, and semantic tokens. |
 
@@ -49,15 +53,18 @@ snippets, and a rendered preview side by side.
 | Project | Description |
 |---|---|
 | [**carve-grammars**](https://github.com/markup-carve/carve-grammars) | **WYSIWYG** rich-text editing via Tiptap / ProseMirror, with a Carve serializer for **roundtripping** (Carve &harr; rich text &harr; Carve). Also ships **Prism** and **highlight.js** grammars for web syntax highlighting. |
+| [**carve-wysiwyg**](https://github.com/markup-carve/carve-wysiwyg) | Ready-to-use WYSIWYG editor app built on the carve-grammars Tiptap kit — visual editing, a live Carve source pane, and an HTML preview. |
+| [**carve-components**](https://github.com/markup-carve/carve-components) | React and Vue `<Carve>` components for rendering Carve in web apps (SSR-safe, safe-by-default HTML). |
 | [**symfony-carve**](https://github.com/markup-carve/symfony-carve) | Symfony bundle (carve-php engine) — a `{{ value\|carve }}` Twig filter and `carve()` function, a `CarveRenderer` service, and configurable safe-mode sanitization. ([demo app](https://github.com/markup-carve/symfony-carve-demo)) |
 | [**wp-carve**](https://github.com/markup-carve/wp-carve) | WordPress plugin (carve-php engine) — live preview, paste, REST API. |
 | [**vite-plugin-carve**](https://github.com/markup-carve/vite-plugin-carve) | Vite plugin — import `.carve` documents as rendered HTML. *Early.* |
 
 **WYSIWYG vs source editing:** the editor plugins above edit Carve *source* with a
 read-only preview. For *WYSIWYG* (edit the rendered document directly), use
-[**carve-grammars**](https://github.com/markup-carve/carve-grammars) — its Tiptap
-kit edits rich text and its serializer **roundtrips** that content back to Carve
-source. (carve-js also ships Markdown/Djot → Carve migration helpers for one-way
+[**carve-wysiwyg**](https://github.com/markup-carve/carve-wysiwyg) — a ready editor
+app built on the [**carve-grammars**](https://github.com/markup-carve/carve-grammars)
+Tiptap kit, whose serializer **roundtrips** rich text back to Carve source.
+(carve-js also ships Markdown/Djot → Carve migration helpers for one-way
 conversion.)
 
 **Resources**
