@@ -41,9 +41,9 @@
 | [**intellij-carve**](https://github.com/markup-carve/intellij-carve) | JetBrains IDEs (IntelliJ, PhpStorm, WebStorm, ...): highlighting, live preview, HTML export. |
 | [**vscode-carve**](https://github.com/markup-carve/vscode-carve) | VS Code extension — syntax highlighting, snippets, live preview. |
 | [**zed-carve**](https://github.com/markup-carve/zed-carve) | Zed editor support. |
-| [**carve-emacs**](https://github.com/markup-carve/carve-emacs) | Emacs major mode (`carve-mode`): font-lock highlighting, imenu, outline. |
-| [**carve-vim**](https://github.com/markup-carve/carve-vim) | Vim and Neovim support: regex syntax plus Neovim Tree-sitter integration. |
-| [**carve-sublime**](https://github.com/markup-carve/carve-sublime) | Sublime Text package (syntax highlighting). |
+| [**emacs-carve**](https://github.com/markup-carve/emacs-carve) | Emacs major mode (`carve-mode`): font-lock highlighting, imenu, outline. |
+| [**vim-carve**](https://github.com/markup-carve/vim-carve) | Vim and Neovim support: regex syntax plus Neovim Tree-sitter integration. |
+| [**sublime-carve**](https://github.com/markup-carve/sublime-carve) | Sublime Text package (syntax highlighting). |
 | [**helix-carve**](https://github.com/markup-carve/helix-carve) | Helix editor support (languages.toml + tree-sitter queries). |
 | [**tree-sitter-carve**](https://github.com/markup-carve/tree-sitter-carve) | Tree-sitter grammar (highlighting, structural editing). |
 | [**carve-lsp**](https://github.com/markup-carve/carve-lsp) | Language server: diagnostics, completion, hover, rename, folding, formatting, and semantic tokens. |
