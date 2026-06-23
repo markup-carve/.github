@@ -30,8 +30,8 @@
 | [**carve-rs**](https://github.com/markup-carve/carve-rs) | Rust parser and HTML renderer with a `carve` CLI; passes the spec corpus. |
 | [**carve-php**](https://github.com/markup-carve/carve-php) | PHP parser and HTML renderer, with converters from Markdown, HTML, BBCode, and Djot. |
 | [**carve-wasm**](https://github.com/markup-carve/carve-wasm) | WASM bindings for carve-rs. *Early.* |
-| [**python-carve**](https://github.com/markup-carve/python-carve) | Python bindings (PyO3) over carve-rs; native wheels via maturin, output identical to the carve-rs CLI. |
-| [**go-carve**](https://github.com/markup-carve/go-carve) | Pure-Go module (wazero + WASI over carve-rs); no cgo. |
+| [**carve-py**](https://github.com/markup-carve/carve-py) | Python bindings (PyO3) over carve-rs; native wheels via maturin, output identical to the carve-rs CLI. |
+| [**carve-go**](https://github.com/markup-carve/carve-go) | Pure-Go module (wazero + WASI over carve-rs); no cgo. |
 | [**carve-rb**](https://github.com/markup-carve/carve-rb) | Native Ruby gem (magnus over carve-rs). |
 
 **Editor support**
@@ -61,7 +61,7 @@ snippets, and a rendered preview side by side.
 | [**symfony-carve**](https://github.com/markup-carve/symfony-carve) | Symfony bundle (carve-php engine) — a `{{ value\|carve }}` Twig filter and `carve()` function, a `CarveRenderer` service, and configurable safe-mode sanitization. ([demo app](https://github.com/markup-carve/symfony-carve-demo)) |
 | [**wp-carve**](https://github.com/markup-carve/wp-carve) | WordPress plugin (carve-php engine) — live preview, paste, REST API. |
 | [**vite-plugin-carve**](https://github.com/markup-carve/vite-plugin-carve) | Vite plugin — import `.carve` documents as rendered HTML. *Early.* |
-| [**mkdocs-carve**](https://github.com/markup-carve/mkdocs-carve) | MkDocs plugin — render `.crv`/`.carve` documentation pages via python-carve. |
+| [**mkdocs-carve**](https://github.com/markup-carve/mkdocs-carve) | MkDocs plugin — render `.crv`/`.carve` documentation pages via carve-py. |
 | [**astro-carve**](https://github.com/markup-carve/astro-carve) | Astro integration — import `.crv`/`.carve` into Astro pages/components as rendered HTML. |
 | [**eleventy-carve**](https://github.com/markup-carve/eleventy-carve) | Eleventy (11ty) plugin — `.crv`/`.carve` as a template format with frontmatter. |
 
