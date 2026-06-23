@@ -31,6 +31,8 @@
 | [**carve-php**](https://github.com/markup-carve/carve-php) | PHP parser and HTML renderer, with converters from Markdown, HTML, BBCode, and Djot. |
 | [**carve-wasm**](https://github.com/markup-carve/carve-wasm) | WASM bindings for carve-rs. *Early.* |
 | [**python-carve**](https://github.com/markup-carve/python-carve) | Python bindings (PyO3) over carve-rs; native wheels via maturin, output identical to the carve-rs CLI. |
+| [**go-carve**](https://github.com/markup-carve/go-carve) | Pure-Go module (wazero + WASI over carve-rs); no cgo. |
+| [**carve-rb**](https://github.com/markup-carve/carve-rb) | Native Ruby gem (magnus over carve-rs). |
 
 **Editor support**
 
@@ -42,6 +44,7 @@
 | [**carve-emacs**](https://github.com/markup-carve/carve-emacs) | Emacs major mode (`carve-mode`): font-lock highlighting, imenu, outline. |
 | [**carve-vim**](https://github.com/markup-carve/carve-vim) | Vim and Neovim support: regex syntax plus Neovim Tree-sitter integration. |
 | [**carve-sublime**](https://github.com/markup-carve/carve-sublime) | Sublime Text package (syntax highlighting). |
+| [**helix-carve**](https://github.com/markup-carve/helix-carve) | Helix editor support (languages.toml + tree-sitter queries). |
 | [**tree-sitter-carve**](https://github.com/markup-carve/tree-sitter-carve) | Tree-sitter grammar (highlighting, structural editing). |
 | [**carve-lsp**](https://github.com/markup-carve/carve-lsp) | Language server: diagnostics, completion, hover, rename, folding, formatting, and semantic tokens. |
 
