@@ -13,6 +13,7 @@
 - **Learnable in 10 seconds, memorable after 10 days** — designed around how non-technical users actually mark up text
 - **No expressive blind spots** — every output is achievable without workarounds
 - **Linear parsing** — no backtracking, no forward references
+- **Safe by spec** — URL-scheme hardening and attribute stripping are baseline rules, so every conformant renderer emits XSS-safe HTML without a bolt-on sanitizer
 
 ### Projects
 
