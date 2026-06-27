@@ -1,0 +1,66 @@
+name: Feature Request
+description: Propose a new language feature, extension, or behavior change.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Language features go through a spec-first process: new syntax or behavior is
+        defined in the grammar and corpus before any implementation ships it.
+        Tier-1 (core) changes are held to a higher bar than Tier-2/3 extensions.
+
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Tier
+      description: >
+        Core (Tier-1): changes to base parsing that every conformant implementation
+        must support. Extension (Tier-2/3): opt-in syntax that can be enabled per
+        renderer.
+      options:
+        - Tier-1 (core language)
+        - Tier-2 (standard extension)
+        - Tier-3 (author/app extension)
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or motivation
+      description: What are you trying to express or achieve that the current language does not support well?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed syntax / behavior
+      description: |
+        Show the Carve source you would like to write and the HTML output you expect.
+        If you have grammar-level thoughts, include them.
+      placeholder: |
+        Input:
+        ```
+        ...
+        ```
+
+        Expected output:
+        ```html
+        ...
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other approaches you thought about and why you prefer this one.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Links to prior art, related issues, or implementations in other markup languages.

@@ -1,0 +1,72 @@
+name: Bug Report
+description: Report a parsing or rendering bug in any Carve implementation.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before filing, please check if the same input is handled correctly by the
+        [carve-js playground](https://markup-carve.github.io/carve/) - it uses the
+        reference implementation and can help confirm whether the issue is in the spec
+        or in a specific engine.
+
+  - type: dropdown
+    id: repo
+    attributes:
+      label: Affected repo / engine
+      description: Which implementation shows the bug?
+      multiple: true
+      options:
+        - carve-js (TypeScript)
+        - carve-rs (Rust)
+        - carve-php (PHP)
+        - carve-wasm
+        - carve-py
+        - carve-rb
+        - carve-go
+        - carve (spec / corpus)
+        - Other (describe below)
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Package version or Git commit where the bug appears.
+      placeholder: "e.g. 0.1.3 or abc1234"
+    validations:
+      required: true
+
+  - type: textarea
+    id: input
+    attributes:
+      label: Carve input
+      description: The minimal Carve source that triggers the bug. Use a fenced code block if helpful.
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected HTML output
+      description: What HTML you expect the renderer to produce.
+      render: html
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual HTML output
+      description: What the renderer actually produces.
+      render: html
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Relevant options (safe mode on/off, extensions enabled), stack traces, or links to related issues.
