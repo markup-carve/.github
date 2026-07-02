@@ -28,8 +28,8 @@
 | Project | Description |
 |---|---|
 | [**carve-js**](https://github.com/markup-carve/carve-js) | Reference TypeScript implementation. |
-| [**carve-rs**](https://github.com/markup-carve/carve-rs) | Rust parser and HTML renderer with a `carve` CLI; passes the spec corpus. |
 | [**carve-php**](https://github.com/markup-carve/carve-php) | PHP parser and HTML renderer, with converters from Markdown, HTML, BBCode, and Djot. |
+| [**carve-rs**](https://github.com/markup-carve/carve-rs) | Rust parser and HTML renderer with a `carve` CLI; passes the spec corpus. |
 | [**carve-wasm**](https://github.com/markup-carve/carve-wasm) | WASM bindings for carve-rs. *Early.* |
 | [**carve-py**](https://github.com/markup-carve/carve-py) | Python bindings (PyO3) over carve-rs; native wheels via maturin, output identical to the carve-rs CLI. |
 | [**carve-go**](https://github.com/markup-carve/carve-go) | Pure-Go module (wazero + WASI over carve-rs); no cgo. |
