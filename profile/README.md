@@ -29,6 +29,7 @@
 |---|---|
 | [**carve-js**](https://github.com/markup-carve/carve-js) | Reference TypeScript implementation. |
 | [**carve-php**](https://github.com/markup-carve/carve-php) | PHP parser and HTML renderer, with converters from Markdown, HTML, BBCode, and Djot. |
+| [**carve-php-media-embed**](https://github.com/markup-carve/carve-php-media-embed) | Opt-in carve-php extension — embeds audio/video from 30+ providers via media-embed. |
 | [**carve-rs**](https://github.com/markup-carve/carve-rs) | Rust parser and HTML renderer with a `carve` CLI; passes the spec corpus. |
 | [**carve-wasm**](https://github.com/markup-carve/carve-wasm) | WASM bindings for carve-rs. *Early.* |
 | [**carve-py**](https://github.com/markup-carve/carve-py) | Python bindings (PyO3) over carve-rs; native wheels via maturin, output identical to the carve-rs CLI. |
@@ -59,14 +60,17 @@ snippets, and a rendered preview side by side.
 | [**carve-grammars**](https://github.com/markup-carve/carve-grammars) | **WYSIWYG** rich-text editing via Tiptap / ProseMirror, with a Carve serializer for **roundtripping** (Carve &harr; rich text &harr; Carve). Also ships **Prism** and **highlight.js** grammars for web syntax highlighting. |
 | [**carve-wysiwyg**](https://github.com/markup-carve/carve-wysiwyg) | Ready-to-use WYSIWYG editor app built on the carve-grammars Tiptap kit — visual editing, a live Carve source pane, and an HTML preview. |
 | [**carve-components**](https://github.com/markup-carve/carve-components) | React and Vue `<Carve>` components for rendering Carve in web apps (SSR-safe, safe-by-default HTML). |
+| [**laravel-carve**](https://github.com/markup-carve/laravel-carve) | Laravel package (carve-php engine) — Blade directives, a `Carve` facade, a validation rule, and render caching. ([demo app](https://github.com/markup-carve/laravel-carve-demo)) |
 | [**symfony-carve**](https://github.com/markup-carve/symfony-carve) | Symfony bundle (carve-php engine) — a `{{ value\|carve }}` Twig filter and `carve()` function, a `CarveRenderer` service, and configurable safe-mode sanitization. ([demo app](https://github.com/markup-carve/symfony-carve-demo)) |
 | [**wp-carve**](https://github.com/markup-carve/wp-carve) | WordPress plugin (carve-php engine) — live preview, paste, REST API. |
-| [**vite-plugin-carve**](https://github.com/markup-carve/vite-plugin-carve) | Vite plugin — import `.carve` documents as rendered HTML. *Early.* |
-| [**mkdocs-carve**](https://github.com/markup-carve/mkdocs-carve) | MkDocs plugin — render `.crv`/`.carve` documentation pages via carve-py. |
-| [**astro-carve**](https://github.com/markup-carve/astro-carve) | Astro integration — import `.crv`/`.carve` into Astro pages/components as rendered HTML. |
-| [**eleventy-carve**](https://github.com/markup-carve/eleventy-carve) | Eleventy (11ty) plugin — `.crv`/`.carve` as a template format with frontmatter. |
-| [**hugo-carve**](https://github.com/markup-carve/hugo-carve) | Hugo preprocessor (via carve-go) — convert `.crv`/`.carve` content to HTML pages. |
-| [**jekyll-carve**](https://github.com/markup-carve/jekyll-carve) | Jekyll converter plugin — render `.crv`/`.carve` via the carve Ruby gem. |
+| [**shopware-carve**](https://github.com/markup-carve/shopware-carve) | Shopware 6 plugin (carve-php engine) — Twig filters, CMS element, product/category fields, admin live preview, mail. |
+| [**vite-plugin-carve**](https://github.com/markup-carve/vite-plugin-carve) | Vite plugin — import `.crv` documents as rendered HTML. *Early.* |
+| [**mkdocs-carve**](https://github.com/markup-carve/mkdocs-carve) | MkDocs plugin — render `.crv` documentation pages via carve-py. |
+| [**astro-carve**](https://github.com/markup-carve/astro-carve) | Astro integration — import `.crv` into Astro pages/components as rendered HTML. |
+| [**eleventy-carve**](https://github.com/markup-carve/eleventy-carve) | Eleventy (11ty) plugin — `.crv` as a template format with frontmatter. |
+| [**hugo-carve**](https://github.com/markup-carve/hugo-carve) | Hugo preprocessor (via carve-go) — convert `.crv` content to HTML pages. |
+| [**jekyll-carve**](https://github.com/markup-carve/jekyll-carve) | Jekyll converter plugin — render `.crv` via the carve-lang Ruby gem. |
+| [**carve-hexapdf**](https://github.com/markup-carve/carve-hexapdf) | Render Carve to PDF via the pure-Ruby HexaPDF engine (over the carve-lang gem). |
 
 **WYSIWYG vs source editing:** the editor plugins above edit Carve *source* with a
 read-only preview. For *WYSIWYG* (edit the rendered document directly), use
@@ -81,6 +85,7 @@ conversion.)
 | Project | Description |
 |---|---|
 | [**awesome-carve**](https://github.com/markup-carve/awesome-carve) | Curated list of Carve tools, libraries, and resources. |
+| [**carve-bench**](https://github.com/markup-carve/carve-bench) | Cross-engine render performance benchmarks (carve-js / carve-php / carve-rs). |
 
 ### A taste
 
