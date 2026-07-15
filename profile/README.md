@@ -81,6 +81,12 @@ Tiptap kit, whose serializer **roundtrips** rich text back to Carve source.
 (carve-js also ships Markdown/Djot → Carve migration helpers for one-way
 conversion.)
 
+**AI / agent tooling**
+
+| Project | Description |
+|---|---|
+| [**carve-skill**](https://github.com/markup-carve/carve-skill) | Claude Code / agent authoring skill — front-loads the correct syntax and the Markdown/Djot traps so AI tools write valid Carve the first time. |
+
 **Resources**
 
 | Project | Description |
