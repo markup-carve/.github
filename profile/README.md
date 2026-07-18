@@ -72,6 +72,7 @@ snippets, and a rendered preview side by side.
 | [**jekyll-carve**](https://github.com/markup-carve/jekyll-carve) | Jekyll converter plugin — render `.crv` via the carve-lang Ruby gem. |
 | [**carve-pdf**](https://github.com/markup-carve/carve-pdf) | Render Carve to PDF via the `crv2pdf` CLI - headless Chrome (CDP) with a pluggable PHP or JS Carve backend; also emits HTML, Markdown, and text, with batch and watch modes. |
 | [**carve-hexapdf**](https://github.com/markup-carve/carve-hexapdf) | Render Carve to PDF via the pure-Ruby HexaPDF engine (over the carve-lang gem). |
+| [**pandoc-carve**](https://github.com/markup-carve/pandoc-carve) | Bidirectional Pandoc bridge — export Carve to LaTeX, Typst, DOCX, PDF and every pandoc writer; import anything pandoc reads (DOCX, LaTeX, RST, ...) as Carve. |
 
 **WYSIWYG vs source editing:** the editor plugins above edit Carve *source* with a
 read-only preview. For *WYSIWYG* (edit the rendered document directly), use
