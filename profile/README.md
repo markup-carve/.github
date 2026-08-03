@@ -53,6 +53,12 @@
 These provide **source-mode** editing: you write Carve markup and get highlighting,
 snippets, and a rendered preview side by side.
 
+**Publishing**
+
+| Project | Description |
+|---|---|
+| [**carve-press**](https://github.com/markup-carve/carve-press) | First-party static site generator for `.crv` content - file-based routing, search, blog, feed, and build-time link and cross-reference validation. Its own documentation site is built with it. [Site &rarr;](https://markup-carve.github.io/carve-press/) |
+
 **Integrations**
 
 | Project | Description |
