@@ -59,11 +59,16 @@ snippets, and a rendered preview side by side.
 |---|---|
 | [**carve-press**](https://github.com/markup-carve/carve-press) | First-party static site generator for `.crv` content - file-based routing, search, blog, feed, and build-time link and cross-reference validation. Its own documentation site is built with it. [Site &rarr;](https://markup-carve.github.io/carve-press/) |
 
-**Styling**
+**Styling and syntax highlighting**
 
 | Project | Description |
 |---|---|
 | [**carve-css**](https://github.com/markup-carve/carve-css) | The stylesheet for Carve's rendered HTML - admonitions, tab sets, code groups, callouts, figures, footnotes, glossary, index. Scoped under `.carve`, themed by overriding custom properties, in four layers (tokens, core, extensions, print). |
+| [**highlightjs-carve**](https://github.com/markup-carve/highlightjs-carve) | highlight.js language definition, as its own package because highlight.js no longer merges new languages into core. UMD and dependency-free. |
+| [**pygments-carve**](https://github.com/markup-carve/pygments-carve) | Pygments lexer, found through an entry point - installing it makes `carve` and `crv` working fence words in MkDocs, Sphinx, Zensical and `pygmentize`. |
+
+The first styles Carve's *output*; the other two colour Carve *source* shown as
+a code block. A document usually wants both.
 
 **Integrations**
 
