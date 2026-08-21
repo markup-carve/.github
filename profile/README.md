@@ -59,6 +59,12 @@ snippets, and a rendered preview side by side.
 |---|---|
 | [**carve-press**](https://github.com/markup-carve/carve-press) | First-party static site generator for `.crv` content - file-based routing, search, blog, feed, and build-time link and cross-reference validation. Its own documentation site is built with it. [Site &rarr;](https://markup-carve.github.io/carve-press/) |
 
+**Styling**
+
+| Project | Description |
+|---|---|
+| [**carve-css**](https://github.com/markup-carve/carve-css) | The stylesheet for Carve's rendered HTML - admonitions, tab sets, code groups, callouts, figures, footnotes, glossary, index. Scoped under `.carve`, themed by overriding custom properties, in four layers (tokens, core, extensions, print). |
+
 **Integrations**
 
 | Project | Description |
