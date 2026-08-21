@@ -100,6 +100,9 @@ conversion.)
 | Project | Description |
 |---|---|
 | [**awesome-carve**](https://github.com/markup-carve/awesome-carve) | Curated list of Carve tools, libraries, and resources. |
+| [**docusaurus-carve**](https://github.com/markup-carve/docusaurus-carve) | Docusaurus docs plugin for authoring routed documentation pages in `.crv`. |
+| [**webpack-loader-carve**](https://github.com/markup-carve/webpack-loader-carve) | Webpack and Next.js loader for build-time `.crv` imports. |
+| [**obsidian-carve**](https://github.com/markup-carve/obsidian-carve) | Obsidian source and reading views for `.crv` notes. |
 | [**carve-bench**](https://github.com/markup-carve/carve-bench) | Cross-engine render performance benchmarks (carve-js / carve-php / carve-rs). |
 
 ### A taste
