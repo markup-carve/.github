@@ -1,0 +1,41 @@
+name: Discord community updates
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: discord-community-updates
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Restore notification state
+        uses: actions/cache/restore@v4
+        with:
+          path: .bridge-state
+          key: discord-community-${{ github.run_id }}
+          restore-keys: discord-community-
+      - name: Post new labeled issues
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_GOOD_FIRST_ISSUES_WEBHOOK }}
+        run: python3 .github/scripts/discord_good_first_issues.py
+      - name: Post new external pull requests
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_COMMUNITY_PRS_WEBHOOK }}
+        run: python3 .github/scripts/discord_community_prs.py
+      - name: Save notification state
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .bridge-state
+          key: discord-community-${{ github.run_id }}
