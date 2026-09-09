@@ -2,7 +2,6 @@ import importlib.util
 import json
 from pathlib import Path
 
-
 SCRIPT = Path(__file__).with_name("discord_good_first_issues.py")
 SPEC = importlib.util.spec_from_file_location("discord_good_first_issues", SCRIPT)
 assert SPEC and SPEC.loader

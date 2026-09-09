@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Post newly discovered `good first issue` items to Discord."""
 
 from __future__ import annotations
@@ -24,7 +23,10 @@ def request_json(
     token: str | None = None,
     payload: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
-    headers = {"Accept": "application/vnd.github+json", "User-Agent": "markup-carve-discord"}
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "User-Agent": "markup-carve-discord",
+    }
     if token:
         headers["Authorization"] = f"Bearer {token}"
         headers["X-GitHub-Api-Version"] = "2022-11-28"
@@ -34,7 +36,9 @@ def request_json(
         data = json.dumps(payload).encode()
     for attempt in range(3):
         try:
-            with urlopen(Request(url, data=data, headers=headers, method=method)) as response:
+            with urlopen(
+                Request(url, data=data, headers=headers, method=method)
+            ) as response:
                 raw = response.read()
                 return json.loads(raw) if raw else {}
         except HTTPError as error:
@@ -42,7 +46,9 @@ def request_json(
                 time.sleep(float(error.headers.get("Retry-After", "1")))
                 continue
             detail = error.read().decode(errors="replace")
-            raise RuntimeError(f"{method} request failed with HTTP {error.code}: {detail}") from error
+            raise RuntimeError(
+                f"{method} request failed with HTTP {error.code}: {detail}"
+            ) from error
     raise RuntimeError("request retry limit reached")
 
 
@@ -105,7 +111,9 @@ def main() -> None:
         # Preserve every successful delivery if a later webhook call fails.
         save_seen(seen)
     save_seen(seen)
-    print(f"Found {len(issues)} open good-first issues; posted {len(new_issues)} new item(s).")
+    print(
+        f"Found {len(issues)} open good-first issues; posted {len(new_issues)} new item(s)."
+    )
 
 
 if __name__ == "__main__":
