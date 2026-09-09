@@ -13,13 +13,17 @@ GITHUB_API = "https://api.github.com"
 QUERY = "org:markup-carve is:pr is:open"
 STATE_PATH = Path(".bridge-state/community-prs.json")
 INTERNAL_ASSOCIATIONS = {"OWNER", "MEMBER", "COLLABORATOR"}
+# GitHub's search results do not always expose an organization's private team
+# membership consistently. Keep known internal accounts as a defensive filter.
+INTERNAL_LOGINS = {"dereuromark"}
 
 
 def is_community_pr(item: dict[str, Any]) -> bool:
     user = item.get("user", {})
-    login = user.get("login", "")
+    login = user.get("login", "").lower()
     return (
         item.get("author_association") not in INTERNAL_ASSOCIATIONS
+        and login not in INTERNAL_LOGINS
         and user.get("type") != "Bot"
         and not login.endswith("[bot]")
     )

@@ -31,6 +31,8 @@ def test_filter_keeps_community_and_excludes_internal_and_bots() -> None:
     assert MODULE.is_community_pr(item())
     assert not MODULE.is_community_pr(item(association="MEMBER"))
     assert not MODULE.is_community_pr(item(association="OWNER"))
+    assert not MODULE.is_community_pr(item(login="dereuromark"))
+    assert not MODULE.is_community_pr(item(login="Dereuromark"))
     assert not MODULE.is_community_pr(item(user_type="Bot"))
     assert not MODULE.is_community_pr(item(login="dependabot[bot]"))
 
