@@ -94,7 +94,7 @@ a code block. A document usually wants both.
 
 **WYSIWYG vs source editing:** the editor plugins above edit Carve *source* with a
 read-only preview. For *WYSIWYG* (edit the rendered document directly), use
-[**carve-wysiwyg**](https://github.com/markup-carve/carve-wysiwyg) — a ready editor
+[**carve-wysiwyg**](https://github.com/markup-carve/carve-wysiwyg), a ready editor
 app built on the [**carve-grammars**](https://github.com/markup-carve/carve-grammars)
 Tiptap kit, whose serializer **roundtrips** rich text back to Carve source.
 (carve-js also ships Markdown/Djot → Carve migration helpers for one-way
