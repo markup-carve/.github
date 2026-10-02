@@ -58,6 +58,8 @@ snippets, and a rendered preview side by side.
 | Project | Description |
 |---|---|
 | [**carve-press**](https://github.com/markup-carve/carve-press) | First-party static site generator for `.crv` content - file-based routing, search, blog, feed, and build-time link and cross-reference validation. Its own documentation site is built with it. [Site &rarr;](https://markup-carve.github.io/carve-press/) |
+| [**carve-latex**](https://github.com/markup-carve/carve-latex) | Publication-grade LaTeX and PDF output - a document class, bibliography and index support, for work that has to look typeset rather than rendered. |
+| [**carve-sile**](https://github.com/markup-carve/carve-sile) | Carve input for SILE and resilient.sile, for typesetting that needs fine control over the page. |
 
 **Styling and syntax highlighting**
 
@@ -66,6 +68,8 @@ snippets, and a rendered preview side by side.
 | [**carve-css**](https://github.com/markup-carve/carve-css) | The stylesheet for Carve's rendered HTML - admonitions, tab sets, code groups, callouts, figures, footnotes, glossary, index. Scoped under `.carve`, themed by overriding custom properties, in four layers (tokens, core, extensions, print). |
 | [**highlightjs-carve**](https://github.com/markup-carve/highlightjs-carve) | highlight.js language definition, as its own package because highlight.js no longer merges new languages into core. UMD and dependency-free. |
 | [**pygments-carve**](https://github.com/markup-carve/pygments-carve) | Pygments lexer, found through an entry point - installing it makes `carve` and `crv` working fence words in MkDocs, Sphinx, Zensical and `pygmentize`. |
+| [**rouge-carve**](https://github.com/markup-carve/rouge-carve) | Rouge lexer - highlights `.crv` wherever Rouge runs, including GitLab and Jekyll. |
+| [**tempest-highlight-carve**](https://github.com/markup-carve/tempest-highlight-carve) | Carve support for `tempest/highlight`, for server-side highlighting of `.crv` source. |
 
 The first styles Carve's *output*; the other two colour Carve *source* shown as
 a code block. A document usually wants both.
@@ -83,10 +87,15 @@ a code block. A document usually wants both.
 | [**shopware-carve**](https://github.com/markup-carve/shopware-carve) | Shopware 6 plugin (carve-php engine) — Twig filters, CMS element, product/category fields, admin live preview, mail. |
 | [**vite-plugin-carve**](https://github.com/markup-carve/vite-plugin-carve) | Vite plugin — import `.crv` documents as rendered HTML. *Early.* |
 | [**mkdocs-carve**](https://github.com/markup-carve/mkdocs-carve) | MkDocs plugin — render `.crv` documentation pages via carve-py. |
+| [**zensical-carve**](https://github.com/markup-carve/zensical-carve) | Zensical, the MkDocs successor - a superfences block plus a whole-page `.crv` preprocessor. |
 | [**astro-carve**](https://github.com/markup-carve/astro-carve) | Astro integration — import `.crv` into Astro pages/components as rendered HTML. |
 | [**eleventy-carve**](https://github.com/markup-carve/eleventy-carve) | Eleventy (11ty) plugin — `.crv` as a template format with frontmatter. |
 | [**hugo-carve**](https://github.com/markup-carve/hugo-carve) | Hugo preprocessor (via carve-go) — convert `.crv` content to HTML pages. |
 | [**jekyll-carve**](https://github.com/markup-carve/jekyll-carve) | Jekyll converter plugin — render `.crv` via the carve-lang Ruby gem. |
+| [**reveal-carve**](https://github.com/markup-carve/reveal-carve) | reveal.js presentations written in Carve, as a runtime plugin or a static build step. |
+| [**tempest-carve**](https://github.com/markup-carve/tempest-carve) | Tempest framework integration, safe by default. |
+| [**echo-carve**](https://github.com/markup-carve/echo-carve) | Echo integration, backed by carve-rs through a small C ABI. |
+| [**carve-okf**](https://github.com/markup-carve/carve-okf) | Export a Carve document as an Open Knowledge Format bundle. |
 | [**carve-pdf**](https://github.com/markup-carve/carve-pdf) | Render Carve to PDF via the `crv2pdf` CLI - headless Chrome (CDP) with a pluggable PHP or JS Carve backend; also emits HTML, Markdown, and text, with batch and watch modes. |
 | [**carve-hexapdf**](https://github.com/markup-carve/carve-hexapdf) | Render Carve to PDF via the pure-Ruby HexaPDF engine (over the carve-lang gem). |
 | [**pandoc-carve**](https://github.com/markup-carve/pandoc-carve) | Bidirectional Pandoc bridge — export Carve to LaTeX, Typst, DOCX, PDF and every pandoc writer; import anything pandoc reads (DOCX, LaTeX, RST, ...) as Carve. |
@@ -104,6 +113,7 @@ conversion.)
 
 | Project | Description |
 |---|---|
+| [**carve-mcp**](https://github.com/markup-carve/carve-mcp) | Model Context Protocol server - authoring, linting, converting and rendering Carve from an agent. |
 | [**carve-skill**](https://github.com/markup-carve/carve-skill) | Claude Code / agent authoring skill — front-loads the correct syntax and the Markdown/Djot traps so AI tools write valid Carve the first time. |
 
 **Resources**
@@ -115,6 +125,18 @@ conversion.)
 | [**webpack-loader-carve**](https://github.com/markup-carve/webpack-loader-carve) | Webpack and Next.js loader for build-time `.crv` imports. |
 | [**obsidian-carve**](https://github.com/markup-carve/obsidian-carve) | Obsidian source and reading views for `.crv` notes. |
 | [**carve-bench**](https://github.com/markup-carve/carve-bench) | Cross-engine render performance benchmarks (carve-js / carve-php / carve-rs). |
+| [**pandoc-format-fidelity**](https://github.com/markup-carve/pandoc-format-fidelity) | How much of a document survives a conversion: identical AST probes through every pandoc writer and reader, Carve included. |
+| [**carve-compat**](https://github.com/markup-carve/carve-compat) | Cross-format AST compatibility tests, diagnostics and reports. |
+| [**carve-proofs**](https://github.com/markup-carve/carve-proofs) | Machine-checked models of the parsing rules, compared against the reference implementations. |
+
+### Install the CLI
+
+```
+brew install markup-carve/carve/carve
+```
+
+The tap lives in [**homebrew-carve**](https://github.com/markup-carve/homebrew-carve) and also carries `crv2pdf`.
+Every implementation above is installable from its own language's registry as well.
 
 ### A taste
 
