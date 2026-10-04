@@ -100,6 +100,7 @@ a code block. A document usually wants both.
 | [**carve-hexapdf**](https://github.com/markup-carve/carve-hexapdf) | Render Carve to PDF via the pure-Ruby HexaPDF engine (over the carve-lang gem). |
 | [**pandoc-carve**](https://github.com/markup-carve/pandoc-carve) | Bidirectional Pandoc bridge — export Carve to LaTeX, Typst, DOCX, PDF and every pandoc writer; import anything pandoc reads (DOCX, LaTeX, RST, ...) as Carve. |
 | [**pdf-to-carve**](https://github.com/markup-carve/pdf-to-carve) | PDFs and document images → Carve. AI-free for born-digital PDFs, optional vision path for scans; extraction yields validated JSON that a deterministic writer turns into Carve. |
+| [**docling-carve**](https://github.com/markup-carve/docling-carve) | Docling documents and JSON to Carve, with provenance, image assets, review diagnostics, and Python, CLI, HTTP, and MCP interfaces. |
 
 **WYSIWYG vs source editing:** the editor plugins above edit Carve *source* with a
 read-only preview. For *WYSIWYG* (edit the rendered document directly), use
