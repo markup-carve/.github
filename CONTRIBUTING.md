@@ -76,6 +76,13 @@ Each repo has its own linter/formatter config:
 
 Please run the appropriate formatter before opening a PR. CI will catch violations, but it is faster to fix locally.
 
+## Repository Settings
+
+Every repository shares one set of merge, branch-protection and label settings.
+[REPOSITORY_BASELINE.md](REPOSITORY_BASELINE.md) records them, says how to apply
+them to a new repository before its first merge, and ships a read-only checker
+that reports anything out of step.
+
 ## Security Issues
 
 See [SECURITY.md](SECURITY.md). Do not open public issues for vulnerabilities.
