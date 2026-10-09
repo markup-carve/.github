@@ -127,8 +127,7 @@ conversion.)
 | [**obsidian-carve**](https://github.com/markup-carve/obsidian-carve) | Obsidian source and reading views for `.crv` notes. |
 | [**carve-bench**](https://github.com/markup-carve/carve-bench) | Cross-engine render performance benchmarks (carve-js / carve-php / carve-rs). |
 | [**pandoc-format-fidelity**](https://github.com/markup-carve/pandoc-format-fidelity) | How much of a document survives a conversion: identical AST probes through every pandoc writer and reader, Carve included. |
-| [**carve-compat**](https://github.com/markup-carve/carve-compat) | Cross-format AST compatibility tests, diagnostics and reports. |
-| [**carve-proofs**](https://github.com/markup-carve/carve-proofs) | Machine-checked models of the parsing rules, compared against the reference implementations. |
+| [**carve-conformance**](https://github.com/markup-carve/carve-conformance) | Machine-checked models of the parsing rules, reader agreement across the reference implementations, and cross-format AST compatibility. |
 
 ### Install the CLI
 
