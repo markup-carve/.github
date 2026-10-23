@@ -83,6 +83,7 @@ a code block. A document usually wants both.
 | [**carve-components**](https://github.com/markup-carve/carve-components) | React and Vue `<Carve>` components for rendering Carve in web apps (SSR-safe, safe-by-default HTML). |
 | [**laravel-carve**](https://github.com/markup-carve/laravel-carve) | Laravel package (carve-php engine) — Blade directives, a `Carve` facade, a validation rule, and render caching. ([demo app](https://github.com/markup-carve/laravel-carve-demo)) |
 | [**symfony-carve**](https://github.com/markup-carve/symfony-carve) | Symfony bundle (carve-php engine) — a `{{ value\|carve }}` Twig filter and `carve()` function, a `CarveRenderer` service, and configurable safe-mode sanitization. ([demo app](https://github.com/markup-carve/symfony-carve-demo)) |
+| [**cakephp-carve**](https://github.com/markup-carve/cakephp-carve) | CakePHP plugin (carve-php engine) - a view helper and `.crv` templates, a validation rule, an ORM behavior, console commands, and render caching. |
 | [**wp-carve**](https://github.com/markup-carve/wp-carve) | WordPress plugin (carve-php engine) — live preview, paste, REST API. |
 | [**shopware-carve**](https://github.com/markup-carve/shopware-carve) | Shopware 6 plugin (carve-php engine) — Twig filters, CMS element, product/category fields, admin live preview, mail. |
 | [**vite-plugin-carve**](https://github.com/markup-carve/vite-plugin-carve) | Vite plugin — import `.crv` documents as rendered HTML. *Early.* |
