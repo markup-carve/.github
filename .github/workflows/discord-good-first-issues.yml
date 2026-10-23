@@ -19,9 +19,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Restore notification state
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           path: .bridge-state
           key: discord-community-${{ github.run_id }}
@@ -38,7 +38,7 @@ jobs:
         run: python3 .github/scripts/discord_community_prs.py
       - name: Save notification state
         if: always()
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v6
         with:
           path: .bridge-state
           key: discord-community-${{ github.run_id }}
